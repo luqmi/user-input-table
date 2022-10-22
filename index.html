@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken shop</title>
+
+
+
+<style>
+    #container{
+        width: 35%;
+        height: 50vh;
+        border: 2px solid black;
+        display: block;
+        margin: 2px auto;
+        margin-top: 10%;
+        background: rgb(223, 221, 127);
+    }
+  h1,h2,h3{
+    text-align:center;
+  }
+  #grams{
+    display: block;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+  }
+  button{
+    
+    display: block;
+    width: 100px;
+    margin: auto;
+    background: rgb(189, 64, 116);
+    color: aliceblue;
+  }
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    <div id="container">
+        <h1>Price of 1_KG chicken is 500</h1>
+        <br>
+        <h2>Enter weight in gram</h2>
+        <br>
+        <input type="number" id="grams" placeholder="Enter Value">
+        <br>
+        <br>
+        <button onclick="cal()">submit</button>
+        <br>
+        <br>
+        <h3 id="result"></h3>
+    </div>
+
+    <script>
+        function cal(){
+            var gram = document.getElementById("grams").value;
+            var Unit_gram = 0.5;
+            var Total_price = Unit_gram*gram;
+
+        if(gram<1){
+        alert("value is not accept");
+        }
+        else{
+            
+            console.log(
+                gram+" gram \n"+Total_price+" is Total_price"
+            )
+        }
+
+        }
+    </script>
+</body>
+</html>
